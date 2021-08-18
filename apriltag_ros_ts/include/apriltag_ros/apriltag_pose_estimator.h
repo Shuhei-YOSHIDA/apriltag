@@ -9,7 +9,7 @@
 #include <apriltag_msgs/ApriltagPoseStamped.h>
 #include <boost/thread/mutex.hpp>
 
-namespace apriltag_ros {
+namespace apriltag_ros_ts {
 
 class AprilTagDescription{
  public:
@@ -45,6 +45,6 @@ class ApriltagPoseEstimator {
   bool broadcast_tf_;
 };
 
-}  // namespace apriltag_ros
+}  // namespace apriltag_ros_ts
 
 #endif  // APRILTAG_POSE_ESTIMATOR_H_

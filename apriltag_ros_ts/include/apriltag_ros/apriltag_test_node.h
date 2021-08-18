@@ -11,9 +11,9 @@
 #include <sensor_msgs/CameraInfo.h>
 #include <sensor_msgs/Image.h>
 
-#include "apriltag_ros/apriltag_detector.h"
+#include "apriltag_ros_ts/apriltag_detector.h"
 
-namespace apriltag_ros {
+namespace apriltag_ros_ts {
 
 using sensor_msgs::Image;
 using sensor_msgs::CameraInfo;

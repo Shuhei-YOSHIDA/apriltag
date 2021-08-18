@@ -1,4 +1,4 @@
-#include "apriltag_ros/apriltag_pose_estimator.h"
+#include "apriltag_ros_ts/apriltag_pose_estimator.h"
 #include <opencv2/core/core.hpp>
 #include <opencv2/calib3d/calib3d.hpp>
 #include <boost/thread/lock_guard.hpp>
@@ -9,7 +9,7 @@
 #include <XmlRpcException.h>
 
 
-namespace apriltag_ros {
+namespace apriltag_ros_ts {
 
 namespace am = apriltag_msgs;
 namespace ig = image_geometry;
@@ -286,7 +286,7 @@ int main(int argc, char **argv) {
   ros::NodeHandle pnh("~");
 
   try {
-    apriltag_ros::ApriltagPoseEstimator node(pnh);
+    apriltag_ros_ts::ApriltagPoseEstimator node(pnh);
     ros::spin();
   } catch (const std::exception &e) {
     ROS_ERROR("%s: %s", pnh.getNamespace().c_str(), e.what());

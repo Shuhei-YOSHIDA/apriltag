@@ -9,7 +9,7 @@
   </node>
 
   <!-- Detector Node -->
-  <include file="$(find apriltag_ros)/launch/apriltag_detector_node.launch">
+  <include file="$(find apriltag_ros_ts)/launch/apriltag_detector_node.launch">
     <arg name="camera" value="$(arg camera)"/>
   </include>
 </launch>

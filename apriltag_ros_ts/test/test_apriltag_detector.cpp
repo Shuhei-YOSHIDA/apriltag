@@ -1,4 +1,4 @@
-#include "apriltag_ros/apriltag_detector.h"
+#include "apriltag_ros_ts/apriltag_detector.h"
 #include <gtest/gtest.h>
 #include <opencv2/highgui/highgui.hpp>
 #include <ros/package.h>
@@ -6,7 +6,7 @@
 using testing::Test;
 using testing::Values;
 using testing::WithParamInterface;
-using namespace apriltag_ros;
+using namespace apriltag_ros_ts;
 
 class SampleImageTest : public Test {
 protected:

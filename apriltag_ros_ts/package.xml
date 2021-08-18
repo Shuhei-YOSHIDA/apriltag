@@ -1,5 +1,5 @@
 <package format="2">
-  <name>apriltag_ros</name>
+  <name>apriltag_ros_ts</name>
   <version>1.0.0</version>
   <description>The apriltag ros package</description>
   <maintainer email="quchao@seas.upenn.edu">Chao Qu</maintainer>

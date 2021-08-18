@@ -6,10 +6,10 @@
 
 #include <apriltag_mit/apriltag_mit.h>
 #include <apriltag_msgs/Apriltag.h>
-#include <apriltag_ros/apriltag_umich_wrapper.h>
+#include <apriltag_ros_ts/apriltag_umich_wrapper.h>
 #include <opencv2/core/core.hpp>
 
-namespace apriltag_ros {
+namespace apriltag_ros_ts {
 
 using ApriltagVec = std::vector<apriltag_msgs::Apriltag>;
 
@@ -129,6 +129,6 @@ std::string DetectorTypeToString(const DetectorType &detector_type);
 // void RefineApriltags(const cv::Mat &image, ApriltagVec &apriltags,
 //                     int win_size = 5);
 
-} // namespace apriltag_ros
+} // namespace apriltag_ros_ts
 
 #endif // APRILTAG_ROS_APRILTAG_DETECTOR_H_

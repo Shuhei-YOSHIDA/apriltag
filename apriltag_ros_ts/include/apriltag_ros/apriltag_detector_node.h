@@ -6,10 +6,10 @@
 #include <ros/ros.h>
 #include <sensor_msgs/Image.h>
 
-#include "apriltag_ros/apriltag_detector.h"
-#include <apriltag_ros/ApriltagDetectorDynConfig.h>
+#include "apriltag_ros_ts/apriltag_detector.h"
+#include <apriltag_ros_ts/ApriltagDetectorDynConfig.h>
 
-namespace apriltag_ros {
+namespace apriltag_ros_ts {
 
 namespace it = image_transport;
 namespace dr = dynamic_reconfigure;
@@ -38,6 +38,6 @@ private:
   ApriltagDetectorPtr detector_;
 };
 
-} // namespace apriltag_ros
+} // namespace apriltag_ros_ts
 
 #endif // APRILTAG_ROS_APRILTAG_DETECTOR_NODE_H_

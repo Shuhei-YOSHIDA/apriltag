@@ -1,11 +1,11 @@
-#include "apriltag_ros/apriltag_detector.h"
+#include "apriltag_ros_ts/apriltag_detector.h"
 
 #include <boost/make_shared.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <ros/ros.h>
 
-namespace apriltag_ros {
+namespace apriltag_ros_ts {
 
 namespace mit = apriltag_mit;
 namespace umich = apriltag_umich3;
@@ -316,4 +316,4 @@ bool InsideImage(const cv::Mat &image, const cv::Point2f &p, int b) {
 //  }
 //}
 
-}  // namespace apriltag_ros
+}  // namespace apriltag_ros_ts

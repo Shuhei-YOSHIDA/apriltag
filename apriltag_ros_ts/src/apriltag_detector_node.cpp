@@ -1,4 +1,4 @@
-#include "apriltag_ros/apriltag_detector_node.h"
+#include "apriltag_ros_ts/apriltag_detector_node.h"
 
 #include <apriltag_msgs/ApriltagArrayStamped.h>
 #include <boost/thread/lock_guard.hpp>
@@ -7,7 +7,7 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <sensor_msgs/image_encodings.h>
 
-namespace apriltag_ros {
+namespace apriltag_ros_ts {
 
 using namespace sensor_msgs;
 using apriltag_msgs::ApriltagArrayStamped;
@@ -81,14 +81,14 @@ void ApriltagDetectorNode::ConnectCb() {
   }
 }
 
-} // namespace apriltag_ros
+} // namespace apriltag_ros_ts
 
 int main(int argc, char **argv) {
   ros::init(argc, argv, "apriltag_detector_node");
   ros::NodeHandle pnh("~");
 
   try {
-    apriltag_ros::ApriltagDetectorNode node(pnh);
+    apriltag_ros_ts::ApriltagDetectorNode node(pnh);
     ros::spin();
   } catch (const std::exception &e) {
     ROS_ERROR("%s: %s", pnh.getNamespace().c_str(), e.what());

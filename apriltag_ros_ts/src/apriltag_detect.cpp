@@ -1,4 +1,4 @@
-#include "apriltag_ros/apriltag_detector.h"
+#include "apriltag_ros_ts/apriltag_detector.h"
 #include <boost/program_options.hpp>
 #include <iostream>
 #include <opencv2/core/core.hpp>
@@ -6,7 +6,7 @@
 #include <opencv2/imgproc/imgproc.hpp>
 
 namespace bpo = boost::program_options;
-using namespace apriltag_ros;
+using namespace apriltag_ros_ts;
 
 int main(int argc, char **argv) {
   int type;
